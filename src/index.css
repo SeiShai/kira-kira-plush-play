@@ -2,41 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Kira Kira Design System - Kawaii Plush E-commerce
+All colors MUST be HSL for consistency and theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - soft pastels */
+    --background: 330 25% 96%;
+    --foreground: 340 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card system - soft with subtle gradients */
+    --card: 320 30% 98%;
+    --card-foreground: 340 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 320 30% 98%;
+    --popover-foreground: 340 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - magical pink gradient */
+    --primary: 320 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 310 90% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - soft lavender */
+    --secondary: 270 35% 85%;
+    --secondary-foreground: 340 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - gentle pastels */
+    --muted: 300 25% 90%;
+    --muted-foreground: 320 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - sparkly blue */
+    --accent: 200 85% 70%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Kawaii color palette */
+    --kawaii-pink: 320 85% 75%;
+    --kawaii-blue: 200 85% 70%;
+    --kawaii-purple: 270 70% 75%;
+    --kawaii-yellow: 45 95% 80%;
+    --kawaii-green: 120 60% 75%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Destructive - soft coral */
+    --destructive: 0 70% 70%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* UI elements */
+    --border: 320 25% 85%;
+    --input: 320 30% 92%;
+    --ring: 320 85% 65%;
+
+    /* Gradients - magical and sparkly */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-kawaii: linear-gradient(135deg, hsl(var(--kawaii-pink)), hsl(var(--kawaii-purple)), hsl(var(--kawaii-blue)));
+    --gradient-sparkle: linear-gradient(45deg, hsl(var(--kawaii-yellow)), hsl(var(--kawaii-pink)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--card)));
+
+    /* Shadows - soft and magical */
+    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.4);
+    --shadow-kawaii: 0 8px 25px hsl(var(--kawaii-pink) / 0.2);
+
+    /* Border radius - extra rounded for kawaii feel */
+    --radius: 1rem;
+    --radius-full: 9999px;
 
     --sidebar-background: 0 0% 98%;
 
